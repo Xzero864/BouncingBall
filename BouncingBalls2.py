@@ -98,8 +98,7 @@ class Game:
         for group1 in self.groups:
             for group2 in self.groups:
                 # Intentionally checking against itself, different logic if group1 == group2
-                print(group1)
-                print(group2)
+
                 collisions = pygame.sprite.groupcollide(group1, group2, False, False)
                 for ball1, ball_list in collisions.items():
                     for ball2 in ball_list:
